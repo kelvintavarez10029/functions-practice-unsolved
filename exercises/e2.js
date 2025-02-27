@@ -6,6 +6,14 @@ import { data } from "../data/data";
 
 export function getAsteroidNames(data) {
   // Your code goes here...
+ let names = [];
+
+ for( let i = 0; i < data.asteroids.length; i++){
+  names.push(data.asteroids[i].name);
+ }
+ return names;
+
+
 }
 
 

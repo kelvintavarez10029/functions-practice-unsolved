@@ -6,6 +6,11 @@ import { data } from "../data/data";
 
 export function allPlanetsMoonsCount(data) {
   // Your code goes here...
+  let sum = 0;
+  for (let i = 0; i < data.planets.length; i++) {
+    sum += data.planets[i].moonsCount || 0;
+  }
+  return sum;
 }
 
 

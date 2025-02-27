@@ -1,4 +1,5 @@
-import { data } from "../data/data";
+// import { r } from "vitest/dist/index-5aad25c1.js";
+import { data } from "../data/data"; 
 
 // SPACE DATA EXERCISE 8
 // Return a Planet name by a given moon name
@@ -6,7 +7,18 @@ import { data } from "../data/data";
 
 export function findPlanetNameByMoon(data, moonName) {
   // Your code goes here...
-}
+  let result = '';
+  
+  for (let i = 0; i < data.planets.length; i++) { 
+    if (data.planets[i].moons && data.planets[i].moons.includes(moonName)) { 
+      return data.planets[i].name; 
+    }
+  }
+  
+  return "";
+  }
+
+
 
 
 

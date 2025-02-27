@@ -1,3 +1,4 @@
+// import { p } from "vitest/dist/index-5aad25c1.js";
 import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 9
@@ -6,6 +7,14 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
+  let result = {};
+
+  for( let i = 0; i < data.planets.length; i++){
+    if(data.planets[i].name === 'Earth'){
+      result = data.planets[i];
+    }
+  }
+  return result;
 }
 
 

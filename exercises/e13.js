@@ -1,12 +1,22 @@
-import { data } from "../data/data";
+import { data } from "../data/data.js";
 
 // SPACE DATA EXERCISE 13
 // Return the average temperature of all the Planets
 // Return example: 132.53
 
 export function getAveragePlanetsTemperature(data) {
-  // Your code goes here...
-}
+
+  let sum = 0;
+
+
+  for (let i = 0; i < data.planets.length; i++) {
+    sum += data.planets[i].avgTemp;
+  }
+  return sum / data.planets.length;
+};
+
+
+
 
 
 

@@ -5,10 +5,17 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetNames(data) {
-  // Your code goes here...
+  // Your code goes here...\\
+ let names = [];
+ for(  let i = 0; i < data.planets.length; i++){
+  names.push(data.planets[i].name);
+ }
+return names;
+
+
 }
 
-
+   
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"

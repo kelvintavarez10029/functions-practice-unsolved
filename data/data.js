@@ -207,4 +207,4 @@ export const data = {
     { name: 'Arrokoth', discoveryYear: 2014, orbitalPeriod: 107847 },
     { name: '101955 Bennu', discoveryYear: 1999, orbitalPeriod: 436.604 }
   ],
-};
+}; 
